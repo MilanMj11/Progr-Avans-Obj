@@ -1,3 +1,4 @@
+import lab4.task1.JustMyFirstException;
 import lab4.task2.CalculatorRequest;
 import lab4.task2.CalculatorResult;
 import lab4.task2.InvalidOperationException;
@@ -10,6 +11,28 @@ import java.util.Map;
 import static lab4.task2.SmarterCalculator.calculate;
 
 public class Main {
+
+    public static void bar() {
+        try {
+            throw new ClassCastException();
+        } catch (RuntimeException e) {
+            try {
+
+            } catch (RuntimeException e2){
+                System.out.println("fail");
+            }
+        }
+    }
+    public static void foo() {
+        try {
+            System.out.println("1");
+            throw new RuntimeException();
+        } catch (RuntimeException e) {
+            System.out.println("2");
+        }
+
+        System.out.println("3");
+    }
     public static void main(String[] args) {
         /*
         String[] inputs = {"1", "+", "2", "2", "*", "5", "1", "+", "0.5", "1.0", "-", "2.0", "10.0", "/", "0", "true", "&&", "false"};
@@ -30,6 +53,7 @@ public class Main {
             }
         }
         */
+        /*
         Map<String, Double> infoCurs = new HashMap<>();
         infoCurs.put("Mate", 6.7);
         infoCurs.put("Info", 9.9);
@@ -49,6 +73,11 @@ public class Main {
 
         System.out.println("Original student after modification: " + student1);
         System.out.println("Cloned student after modification: " + student1Cloned);
+        */
 
+
+        /// task 4
+        // foo();
+        // bar();
     }
 }
