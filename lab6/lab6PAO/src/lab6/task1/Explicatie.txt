@@ -1,0 +1,13 @@
+Pentru acest task am folosit design pattern-ul Strategy
+ca sa implementez cele 3 modui de sortare
+( btw, fie ca sortez dupa notaTotala, fie ca sortez dupa MediaNotelor, e acelasi lucru,
+  inteleg ca nu acesta e scopul task-ului, dar am zis sa metionez totusi )
+
+Cum am folosit acest deisng pattern:
+am creat o interfata SortareStudenti cu 2 metode ( una pentru sortare si una pentru afisare )
+(clasa student are un @Override de toString ca sa pot afisa conform cerintei)
+Am creat pe urma cele 3 clase pentru a implementa fiecare tip de sortare din cele 3 urmarind interfata creata anterior.
+Iar in main am creat o lista de Studenti si am sortat-o folosind fiecare tip de sortare in parte.
+
+Motivul pentru care am ales aceast design pattern este pentru ca am necesitatea de a implementa
+diferite "strategii" de sortare pentru o lista de studenti, iar fiecare "strategie" are o logica diferita.

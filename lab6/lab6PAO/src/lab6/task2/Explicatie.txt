@@ -1,0 +1,5 @@
+Pentru task-ul 2 am folosit design pattern-ul Observer.
+Pentru a gestiona notificarea abonatilor la topicuri.
+Pattern-ul l-am folosit pentru ca am relatii de one to many
+( adica un user trimite un mesaj care ajunge la mai multi useri)
+
