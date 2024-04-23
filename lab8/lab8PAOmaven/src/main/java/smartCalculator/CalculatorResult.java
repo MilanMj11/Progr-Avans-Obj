@@ -3,7 +3,7 @@ package smartCalculator;
 public class CalculatorResult {
     private final CalculatorRequest calculatorRequest;
 
-    protected CalculatorResult(CalculatorRequest calculatorRequest){
+    public CalculatorResult(CalculatorRequest calculatorRequest){
         this.calculatorRequest = calculatorRequest;
     }
 
